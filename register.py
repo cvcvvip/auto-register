@@ -2,18 +2,28 @@ import requests
 import datetime
 import json
 
-# 自动生成当天的邮箱
-today = datetime.datetime.now().strftime("%m%d")
-email = f"anny00{today}@gmail.com"
-password = "anny333"
+def main():
+    # 1. 生成当天的邮箱（格式：annyMMDD@gmail.com）及固定密码
+    today = datetime.datetime.now().strftime("%m%d")
+    email = f"anny{today}@gmail.com"
+    password = "anny333"
 
-# 发送注册请求
-register_url = "https://h5.imayy.cn/reg"
-payload = {"email": email, "password": password}
-headers = {"Content-Type": "application/json"}
-
-response = requests.post(register_url, json=payload, headers=headers)
-print("注册响应:", response.text)
+    # 2. 构造注册请求
+    reg_url = "https://user.imayy.cn/b/reg"
+    # 注意：抓包信息显示注册接口使用的字段名为 pass 而不是 password
+    data = {
+        "email": email,
+        "pass": password,
+        "tg": "kl",
+        "ver": "1",
+        "token": ""
+    }
+    headers = {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
+        "Origin": "https://h5.imayy.cn",
+        "Referer": "https://h5.imayy.cn/"
+    }
 
 # 解析响应获取 usertoken
 try:
