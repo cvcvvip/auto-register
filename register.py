@@ -1,25 +1,40 @@
 import requests
 import datetime
 
-# 生成当天的邮箱
-today_date = datetime.datetime.now().strftime("%m%d")
-email = f"anny{today_date}@gmail.com"
+# 目标URL
+URL = "https://user.imayy.cn/b/reg"
+
+# 计算当前日期 (MMDD)
+today = datetime.datetime.now().strftime("%m%d")
+
+# 生成邮箱和密码
+email = f"anny{today}@gmail.com"
 password = "anny333"
 
-# 目标注册 API（需要替换成实际 API）
-url = "https://h5.imayy.cn/reg"
-
-# 构造请求数据
+# 表单数据
 data = {
     "email": email,
-    "password": password
+    "pass": password,
+    "tg": "kl",
+    "ver": "1",
+    "token": ""  # 如果需要，可以填写
 }
 
-# 发送 POST 请求
-response = requests.post(url, json=data)
+# 请求头
+headers = {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Origin": "https://h5.imayy.cn",
+    "Referer": "https://h5.imayy.cn/",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+}
 
-# 输出结果
-print(f"注册邮箱: {email}")
-print(f"注册密码: {password}")
-print(f"响应状态: {response.status_code}")
-print(f"响应内容: {response.text}")
+# 发送POST请求
+try:
+    response = requests.post(URL, headers=headers, data=data, timeout=10)
+    print("状态码:", response.status_code)
+    print("响应内容:", response.text)
+except requests.RequestException as e:
+    print("请求失败:", str(e))
