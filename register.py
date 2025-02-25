@@ -4,7 +4,7 @@ import datetime
 def main():
     # 1. 生成当天的邮箱（格式：annyMMDD@gmail.com）及固定密码
     today = datetime.datetime.now().strftime("%m%d")
-    email = f"nancy{today}@gmail.com"
+    email = f"nan00{today}@gmail.com"
     password = "anny333"
     
     print(f"生成的邮箱: {email}")
