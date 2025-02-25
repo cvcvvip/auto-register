@@ -1,11 +1,10 @@
 import requests
 import datetime
-import json
 
 def main():
     # 1. 生成当天的邮箱（格式：annyMMDD@gmail.com）及固定密码
     today = datetime.datetime.now().strftime("%m%d")
-    email = f"abccy{today}@gmail.com"
+    email = f"hkccy{today}@gmail.com"
     password = "anny333"
     
     print(f"生成的邮箱: {email}")
@@ -55,6 +54,7 @@ def main():
             # 获取订阅内容
             sub_response = requests.get(subscribe_url, headers=sub_headers)
             if sub_response.status_code == 200:
+                # 直接将响应文本写入文件，而不是解析成 JSON
                 with open("subscribe.txt", "w", encoding="utf-8") as f:
                     f.write(sub_response.text)
                 print("订阅内容已保存到 subscribe.txt")
@@ -65,8 +65,6 @@ def main():
 
     except requests.RequestException as e:
         print(f"请求失败: {e}")
-    except json.JSONDecodeError:
-        print("解析注册响应 JSON 失败")
 
 if __name__ == "__main__":
     main()
