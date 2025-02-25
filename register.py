@@ -5,7 +5,7 @@ import json
 def main():
     # 1. 生成当天的邮箱（格式：annyMMDD@gmail.com）及固定密码
     today = datetime.datetime.now().strftime("%m%d")
-    email = f"aaccy{today}@gmail.com"
+    email = f"abccy{today}@gmail.com"
     password = "anny333"
     
     print(f"生成的邮箱: {email}")
@@ -31,8 +31,8 @@ def main():
     print(f"发送注册请求的 URL: {reg_url}")
     print(f"请求数据: {data}")
 
-    # 发送注册请求
     try:
+        # 发送注册请求
         response = requests.post(reg_url, data=data, headers=headers)
         response.raise_for_status()  # 检查请求是否成功
         print(f"注册请求响应状态码: {response.status_code}")
