@@ -2,7 +2,7 @@ name: Daily Auto Register
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # 每天 UTC 0 点（北京时间 8 点）
+    - cron: "0 0 * * *"  # 每天 UTC 0 点
   workflow_dispatch:  # 允许手动触发
 
 jobs:
@@ -12,22 +12,24 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 设置 Python
+      - name: 设置 Python 环境
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"
+          python-version: "3.x"
 
       - name: 安装依赖
-        run: pip install -r requirements.txt
-
+        run: pip install requests
 
       - name: 运行注册脚本
         run: python register.py
-      
-      - name: 提交订阅文件
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add subscribe.txt
-          git commit -m "更新订阅文件"
-          git push
+
+      # 如需将生成的 subscribe.txt 提交到仓库，可取消以下步骤注释：
+      #- name: 配置 Git
+      #  run: |
+      #    git config --global user.name "github-actions"
+      #    git config --global user.email "github-actions@github.com"
+      #- name: 提交 subscribe.txt
+      #  run: |
+      #    git add subscribe.txt
+      #    git commit -m "更新订阅文件"
+      #    git push
