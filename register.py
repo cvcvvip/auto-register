@@ -25,23 +25,32 @@ def main():
         "Referer": "https://h5.imayy.cn/"
     }
 
-# 解析响应获取 usertoken
-try:
-    response_data = response.json()
-    if response_data.get("code") == 200:  # 注册成功
-        usertoken = response_data["data"]["usertoken"]
-        subscribe_url = f"https://user.imayy.cn/b/subscribe?token={usertoken}"
-        
-        # 获取订阅内容
-        sub_response = requests.get(subscribe_url)
-        if sub_response.status_code == 200:
-            with open("subscribe.txt", "w", encoding="utf-8") as f:
-                f.write(sub_response.text)
-            print("订阅内容已保存到 subscribe.txt")
-        else:
-            print("获取订阅内容失败:", sub_response.status_code)
-    else:
-        print("注册失败:", response_data.get("msg"))
+    # 发送注册请求
+    try:
+        response = requests.post(reg_url, data=data, headers=headers)
+        response.raise_for_status()  # 检查请求是否成功
 
-except json.JSONDecodeError:
-    print("解析注册响应 JSON 失败")
+        # 解析响应获取 usertoken
+        response_data = response.json()
+        if response_data.get("code") == 200:  # 注册成功
+            usertoken = response_data["data"]["usertoken"]
+            subscribe_url = f"https://user.imayy.cn/b/subscribe?token={usertoken}"
+
+            # 获取订阅内容
+            sub_response = requests.get(subscribe_url)
+            if sub_response.status_code == 200:
+                with open("subscribe.txt", "w", encoding="utf-8") as f:
+                    f.write(sub_response.text)
+                print("订阅内容已保存到 subscribe.txt")
+            else:
+                print("获取订阅内容失败:", sub_response.status_code)
+        else:
+            print("注册失败:", response_data.get("msg"))
+
+    except requests.RequestException as e:
+        print(f"请求失败: {e}")
+    except json.JSONDecodeError:
+        print("解析注册响应 JSON 失败")
+
+if __name__ == "__main__":
+    main()
