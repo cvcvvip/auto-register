@@ -20,5 +20,14 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
+
       - name: 运行注册脚本
         run: python register.py
+      
+      - name: 提交订阅文件
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add subscribe.txt
+          git commit -m "更新订阅文件"
+          git push

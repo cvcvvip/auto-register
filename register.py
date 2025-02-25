@@ -1,40 +1,37 @@
 import requests
 import datetime
+import json
 
-# 目标URL
-URL = "https://user.imayy.cn/b/reg"
-
-# 计算当前日期 (MMDD)
+# 自动生成当天的邮箱
 today = datetime.datetime.now().strftime("%m%d")
-
-# 生成邮箱和密码
-email = f"anny{today}@gmail.com"
+email = f"anny11{today}@gmail.com"
 password = "anny333"
 
-# 表单数据
-data = {
-    "email": email,
-    "pass": password,
-    "tg": "kl",
-    "ver": "1",
-    "token": ""  # 如果需要，可以填写
-}
+# 发送注册请求
+register_url = "https://h5.imayy.cn/reg"
+payload = {"email": email, "password": password}
+headers = {"Content-Type": "application/json"}
 
-# 请求头
-headers = {
-    "Accept": "*/*",
-    "Accept-Encoding": "gzip, deflate, br, zstd",
-    "Accept-Language": "zh-CN,zh;q=0.9",
-    "Content-Type": "application/x-www-form-urlencoded",
-    "Origin": "https://h5.imayy.cn",
-    "Referer": "https://h5.imayy.cn/",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
-}
+response = requests.post(register_url, json=payload, headers=headers)
+print("注册响应:", response.text)
 
-# 发送POST请求
+# 解析响应获取 usertoken
 try:
-    response = requests.post(URL, headers=headers, data=data, timeout=10)
-    print("状态码:", response.status_code)
-    print("响应内容:", response.text)
-except requests.RequestException as e:
-    print("请求失败:", str(e))
+    response_data = response.json()
+    if response_data.get("code") == 0:  # 注册成功
+        usertoken = response_data["data"]["usertoken"]
+        subscribe_url = f"https://user.imayy.cn/b/subscribe?token={usertoken}"
+        
+        # 获取订阅内容
+        sub_response = requests.get(subscribe_url)
+        if sub_response.status_code == 200:
+            with open("subscribe.txt", "w", encoding="utf-8") as f:
+                f.write(sub_response.text)
+            print("订阅内容已保存到 subscribe.txt")
+        else:
+            print("获取订阅内容失败:", sub_response.status_code)
+    else:
+        print("注册失败:", response_data.get("msg"))
+
+except json.JSONDecodeError:
+    print("解析注册响应 JSON 失败")
