@@ -5,7 +5,7 @@ import json
 def main():
     # 1. 生成当天的邮箱（格式：annyMMDD@gmail.com）及固定密码
     today = datetime.datetime.now().strftime("%m%d")
-    email = f"anny{today}@gmail.com"
+    email = f"001anny{today}@gmail.com"
     password = "anny333"
 
     # 2. 构造注册请求
