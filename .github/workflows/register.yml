@@ -2,7 +2,7 @@ name: Daily Auto Register
 
 on:
   schedule:
-    - cron: "0 20 * * *"  # 每天北京时间0点对应UTC 16:00
+    - cron: "0 20 * * *"  # 每天北京时间4点对应UTC 20:00
   workflow_dispatch:  # 允许手动触发
 
 jobs:
