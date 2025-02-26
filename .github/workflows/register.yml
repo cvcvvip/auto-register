@@ -30,8 +30,8 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-      - name: 提交 subscribe.txt
+      - name: 提交 all_subscriptions.txt
         run: |
-          git add subscribe.txt
+          git add all_subscriptions.txt
           git commit -m "更新订阅文件"
           git push
