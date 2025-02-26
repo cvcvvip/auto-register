@@ -2,6 +2,8 @@ import random
 import string
 import datetime
 import requests
+import json
+import os
 
 def main():
     # 生成2位字母和2位数字
