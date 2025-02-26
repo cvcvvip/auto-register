@@ -14,7 +14,7 @@ def main():
     today = datetime.datetime.now().strftime("%m%d")
 
     # 拼接邮箱地址
-    email = f"uuss{random_letters}{random_digits}{today}@gmail.com"
+    email = f"{random_letters}{random_digits}{today}@gmail.com"
     password = "anny333"
 
     # 构造注册请求
