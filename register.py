@@ -46,18 +46,19 @@ def main():
         if response_data.get("code") == 200:  # 注册成功
             usertoken = response_data["data"]["usertoken"]
             cities = {
-                "订阅": "https://user.imayy.cn/b/subscribe?token={}".format(usertoken),
-                "香港": "https://user.imayy.cn/b/subscribe?token={}&city=%E9%A6%99%E6%B8%AF".format(usertoken),
-                "新加坡": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%96%B0%E5%8A%A0%E5%9D%A1".format(usertoken),
-                "日本": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%97%A5%E6%9C%AC".format(usertoken),
-                "韩国": "https://user.imayy.cn/b/subscribe?token={}&city=%E9%9F%A9%E5%9B%BD".format(usertoken),
-                "美国": "https://user.imayy.cn/b/subscribe?token={}&city=%E7%BE%8E%E5%9B%BD".format(usertoken),
-                "澳大利亚": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A".format(usertoken),
                 "荷兰": "https://user.imayy.cn/b/subscribe?token={}&city=%E8%8D%B7%E5%85%B0".format(usertoken),
                 "英国": "https://user.imayy.cn/b/subscribe?token={}&city=%E8%8B%B1%E5%9B%BD".format(usertoken),
                 "德国": "https://user.imayy.cn/b/subscribe?token={}&city=%E5%BE%B7%E5%9B%BD".format(usertoken),
                 "西班牙": "https://user.imayy.cn/b/subscribe?token={}&city=%E8%A5%BF%E7%8F%AD%E7%89%99".format(usertoken),
                 "加拿大": "https://user.imayy.cn/b/subscribe?token={}&city=%E5%8A%A0%E6%8B%BF%E5%A4%A7".format(usertoken),
+                "澳大利亚": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A".format(usertoken),
+                "美国": "https://user.imayy.cn/b/subscribe?token={}&city=%E7%BE%8E%E5%9B%BD".format(usertoken),
+                "韩国": "https://user.imayy.cn/b/subscribe?token={}&city=%E9%9F%A9%E5%9B%BD".format(usertoken),
+                "日本": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%97%A5%E6%9C%AC".format(usertoken),
+                "新加坡": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%96%B0%E5%8A%A0%E5%9D%A1".format(usertoken),
+                "香港": "https://user.imayy.cn/b/subscribe?token={}&city=%E9%A6%99%E6%B8%AF".format(usertoken),
+                "订阅": "https://user.imayy.cn/b/subscribe?token={}".format(usertoken),
+                
             }
 
             # 创建一个空字符串来存储所有城市的订阅内容
