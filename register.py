@@ -1,13 +1,22 @@
 import requests
 import json
+import random
+import string
 import datetime
 import os
 
-def main():
-    # 1. 生成当天的邮箱（格式：annyMMDD@gmail.com）及固定密码
-    today = datetime.datetime.now().strftime("%m%d")
-    email = f"uuss{today}@gmail.com"
-    password = "anny333"
+# 生成2位字母和2位数字
+random_letters = ''.join(random.choices(string.ascii_lowercase, k=2))  # 生成2位小写字母
+random_digits = ''.join(random.choices(string.digits, k=2))  # 生成2位数字
+
+# 获取当前日期，格式为mmdd
+today = datetime.datetime.now().strftime("%m%d")
+
+# 拼接邮箱地址
+email = f"{random_letters}{random_digits}{today}@gmail.com"
+password = "anny333"
+
+print("生成的邮箱:", email)
 
     # 2. 构造注册请求
     reg_url = "https://user.imayy.cn/b/reg"
