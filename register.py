@@ -1,24 +1,21 @@
-import requests
-import json
 import random
 import string
 import datetime
-import os
+import requests
 
-# 生成2位字母和2位数字
-random_letters = ''.join(random.choices(string.ascii_lowercase, k=2))  # 生成2位小写字母
-random_digits = ''.join(random.choices(string.digits, k=2))  # 生成2位数字
+def main():
+    # 生成2位字母和2位数字
+    random_letters = ''.join(random.choices(string.ascii_lowercase, k=2))  # 生成2位小写字母
+    random_digits = ''.join(random.choices(string.digits, k=2))  # 生成2位数字
 
-# 获取当前日期，格式为mmdd
-today = datetime.datetime.now().strftime("%m%d")
+    # 获取当前日期，格式为mmdd
+    today = datetime.datetime.now().strftime("%m%d")
 
-# 拼接邮箱地址
-email = f"{random_letters}{random_digits}{today}@gmail.com"
-password = "anny333"
+    # 拼接邮箱地址
+    email = f"uuss{random_letters}{random_digits}{today}@gmail.com"
+    password = "anny333"
 
-print("生成的邮箱:", email)
-
-    # 2. 构造注册请求
+    # 构造注册请求
     reg_url = "https://user.imayy.cn/b/reg"
     data = {
         "email": email,
@@ -34,8 +31,12 @@ print("生成的邮箱:", email)
         "Referer": "https://h5.imayy.cn/"
     }
 
-    # 发送注册请求
     response = requests.post(reg_url, data=data, headers=headers)
+    print("注册请求响应状态码:", response.status_code)
+    print("注册响应数据:", response.json())
+    
+    # 你可以在这里继续添加处理订阅内容的逻辑
+
 
     # 解析响应获取 usertoken
     try:
