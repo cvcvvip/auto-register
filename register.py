@@ -34,6 +34,7 @@ def main():
         if response_data.get("code") == 200:  # 注册成功
             usertoken = response_data["data"]["usertoken"]
             cities = {
+                "订阅": "https://user.imayy.cn/b/subscribe?token={}".format(usertoken),
                 "香港": "https://user.imayy.cn/b/subscribe?token={}&city=%E9%A6%99%E6%B8%AF".format(usertoken),
                 "新加坡": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%96%B0%E5%8A%A0%E5%9D%A1".format(usertoken),
                 "日本": "https://user.imayy.cn/b/subscribe?token={}&city=%E6%97%A5%E6%9C%AC".format(usertoken),
