@@ -18,7 +18,7 @@ def main():
     password = "anny333"
 
     # 构造注册请求
-    reg_url = "https://user.imayy.cn/b/reg"
+    reg_url = "http://user.imayy.cn/b/reg"
     data = {
         "email": email,
         "pass": password,
@@ -29,8 +29,8 @@ def main():
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0",
-        "Origin": "https://h5.imayy.cn",
-        "Referer": "https://h5.imayy.cn/"
+        "Origin": "http://h5.imayy.cn",
+        "Referer": "http://h5.imayy.cn/"
     }
 
     response = requests.post(reg_url, data=data, headers=headers)
