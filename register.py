@@ -18,7 +18,7 @@ def main():
     password = "anny333"
 
     # 构造注册请求
-    reg_url = "https://user.imayy.cn/b/reg"
+    reg_url = "http://user.imayy.cn/b/reg"
     data = {
         "email": email,
         "pass": password,
