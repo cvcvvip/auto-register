@@ -1,15 +1,29 @@
 #!/bin/bash
 
-# 安装 Xray-core
+# 必须root运行
+if [[ $EUID -ne 0 ]]; then
+   echo "请用 root 用户执行该脚本"
+   exit 1
+fi
+
+# 伪装域名，改这里即可
+DOMAIN="aem.three.com.hk"
+
+echo "开始安装 Xray-core..."
 bash <(curl -Ls https://raw.githubusercontent.com/XTLS/Xray-install/main/install-release.sh)
 
-# 生成 Xray 配置文件
 UUID=$(cat /proc/sys/kernel/random/uuid)
 
+echo "创建 Xray 配置目录..."
 mkdir -p /usr/local/etc/xray
+
+echo "生成 Xray 配置文件..."
 
 cat > /usr/local/etc/xray/config.json <<EOF
 {
+  "log": {
+    "loglevel": "warning"
+  },
   "inbounds": [{
     "port": 443,
     "protocol": "vless",
@@ -17,7 +31,7 @@ cat > /usr/local/etc/xray/config.json <<EOF
       "clients": [
         {
           "id": "$UUID",
-          "flow": "xtls-rprx-vision"
+          "flow": "xtls-rprx-direct"
         }
       ],
       "decryption": "none",
@@ -27,7 +41,7 @@ cat > /usr/local/etc/xray/config.json <<EOF
       "network": "tcp",
       "security": "tls",
       "tlsSettings": {
-        "serverName": "aem.three.com.hk",
+        "serverName": "$DOMAIN",
         "certificates": [
           {
             "certificateFile": "/usr/local/etc/xray/cert.crt",
@@ -44,16 +58,29 @@ cat > /usr/local/etc/xray/config.json <<EOF
 }
 EOF
 
-# 创建伪造证书（自签）
+echo "生成自签证书..."
 openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
-  -subj "/CN=aem.three.com.hk" \
+  -subj "/CN=$DOMAIN" \
   -keyout /usr/local/etc/xray/private.key \
   -out /usr/local/etc/xray/cert.crt
 
-# 设置开机自启并重启 Xray
+echo "设置并启动 Xray 服务..."
 systemctl enable xray
 systemctl restart xray
 
-echo "✅ Xray 安装完毕"
-echo "✅ UUID: $UUID"
-echo "✅ 伪装域名: aem.three.com.hk"
+# 获取VLESS链接格式
+# 格式示范：
+# vless://UUID@服务器IP:端口?type=tcp&security=xtls&flow=xtls-rprx-direct&sni=域名#备注
+
+IP=$(curl -s https://api.ipify.org)
+
+VLESS_LINK="vless://${UUID}@${IP}:443?type=tcp&security=xtls&flow=xtls-rprx-direct&sni=${DOMAIN}#${DOMAIN}"
+
+echo -e "\n✅ 安装完成！以下是你的节点信息："
+echo "伪装域名: $DOMAIN"
+echo "服务器IP: $IP"
+echo "UUID: $UUID"
+echo "VLESS+XTLS订阅链接:"
+echo "$VLESS_LINK"
+
+echo -e "\n请确保手机或电脑客户端支持 VLESS + XTLS 连接方式"
