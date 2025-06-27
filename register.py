@@ -18,19 +18,19 @@ def main():
     password = "anny333"
 
     # 构造注册请求
-    reg_url = "https://xxjiajia.com/b/reg"
+    reg_url = "https://user.fnmem.cn/b/reg"
     data = {
         "email": email,
         "pass": password,
-        "tg": "kl",
+        "tg": "star",
         "ver": "1",
         "token": ""
     }
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0",
-        "Origin": "http://h5.xxjiajia.com",
-        "Referer": "http://h5.xxjiajia.com/"
+        "Origin": "https://xxjiajia.com/",
+        "Referer": "https://xxjiajia.com/"
     }
 
     response = requests.post(reg_url, data=data, headers=headers)
