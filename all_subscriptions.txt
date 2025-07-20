@@ -1,61 +1,40 @@
 ===== 荷兰 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:38203?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e8%8d%b7%e5%85%b0-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:39905?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e8%8d%b7%e5%85%b0-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+
 
 ===== 英国 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:17875?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e8%8b%b1%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:53352?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e8%8b%b1%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+
 
 ===== 德国 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:41265?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e5%be%b7%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:32511?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e5%be%b7%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+
 
 ===== 西班牙 订阅内容 =====
 
 
 ===== 加拿大 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:5448?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e5%8a%a0%e6%8b%bf%e5%a4%a7-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:10473?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e5%8a%a0%e6%8b%bf%e5%a4%a7-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:1768?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e5%8a%a0%e6%8b%bf%e5%a4%a7-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:1214?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e5%8a%a0%e6%8b%bf%e5%a4%a7-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+
 
 ===== 澳大利亚 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:3071?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%be%b3%e5%a4%a7%e5%88%a9%e4%ba%9a-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:35039?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%be%b3%e5%a4%a7%e5%88%a9%e4%ba%9a-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:1064?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%be%b3%e5%a4%a7%e5%88%a9%e4%ba%9a-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+
 
 ===== 美国 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:34719?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e7%be%8e%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:699?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e7%be%8e%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:1582?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e7%be%8e%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.62:21575?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e7%be%8e%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:3596?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e7%be%8e%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+vless://YXV0bzozZWY5NzU5OC00MDUxLTRiNmItYTYzOC02MjQ5YWVmZjRjNTNAMy4xMjkuNzAuMTUwOjQ0Mw?remarks=美国7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=A-O6n2qEwJru6IPUP_vc6TffCZSo 1A0Z8cOaj4HmJWE&sid=f51fa733f25944ab
 
 ===== 韩国 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:4448?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e9%9f%a9%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+vless://YXV0bzo1NDQ4MzAxMC01ZmNiLTQyM2EtOTFmOC0wNThmMTQwNzdiNDVAMTMuMTI1LjkuMjE6NDQz?remarks=韩国7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=YnBAjHD5cyekY7GzJPqIxU0xdVQxoTf 0VQbnptc_qks&sid=38eb8842297fd0c3
 
 ===== 日本 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:48495?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%97%a5%e6%9c%ac-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:41225?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%97%a5%e6%9c%ac-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:23888?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%97%a5%e6%9c%ac-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:53248?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%97%a5%e6%9c%ac-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:39701?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%97%a5%e6%9c%ac-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+vless://YXV0bzo3MWIwZGQ4My1iZTExLTRkN2QtYjdlNS0zZmViMjU3YTU1NDZAMTMuMTEzLjkxLjE5MTo0NDM?remarks=日本7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=YqVu-VgOokDmH_9LKhfXn92pdjYPwuy3wuWMQVFFSww&sid=22b8bf21b8f91c06
 
 ===== 新加坡 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:14569?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%96%b0%e5%8a%a0%e5%9d%a1-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:32063?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%96%b0%e5%8a%a0%e5%9d%a1-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:25618?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%96%b0%e5%8a%a0%e5%9d%a1-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:44123?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%96%b0%e5%8a%a0%e5%9d%a1-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:40621?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%96%b0%e5%8a%a0%e5%9d%a1-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+vless://YXV0bzo2ZDBjMTJhYy00ZGIwLTQyNzctODYwMS02N2U1MThjODFjY2JAMTMuMjI5LjIyMi4xODQ6NDQz?remarks=新加坡7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=Xj-x0x2o5izCV9GBDPC96SuS sFG3ubVn6f_1UxuP61M&sid=bba1d66ebeb0e0ed
 
 ===== 香港 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.62:2078?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e9%a6%99%e6%b8%af-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.62:443?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e9%a6%99%e6%b8%af-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.62:14495?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e9%a6%99%e6%b8%af-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:8703?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e9%a6%99%e6%b8%af-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+vless://YXV0bzpkZWFmNmNhMS1lMzI3LTRhMzQtOWFmNy01YzcxMTAwNjg5MDdAMzguMTgwLjE4OC4xMzc6NDQz?remarks=香港7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=-rVrf6R9yds_wDvqUrneg4MwZhnccZ7tNcCmuRxafRM&sid=1a5722cc8c56d424
 
 ===== 订阅 订阅内容 =====
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.251.7:4447?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e7%be%8e%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:4445?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e6%97%a5%e6%9c%ac-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
-trojan://c56b1dd0e251840524f2e7294bac8fe0@36.151.192.239:4448?allowInsecure=1&peer=www.baidu.com&tfo=1&alpn=http/1.1#%e9%9f%a9%e5%9b%bd-%e9%93%be%e8%b7%af%2c2025-07-21%e6%97%a5%e5%88%b0%e6%9c%9f
+vless://YXV0bzpkZWFmNmNhMS1lMzI3LTRhMzQtOWFmNy01YzcxMTAwNjg5MDdAMzguMTgwLjE4OC4xMzc6NDQz?remarks=香港7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=-rVrf6R9yds_wDvqUrneg4MwZhnccZ7tNcCmuRxafRM&sid=1a5722cc8c56d424
+vless://YXV0bzo3MWIwZGQ4My1iZTExLTRkN2QtYjdlNS0zZmViMjU3YTU1NDZAMTMuMTEzLjkxLjE5MTo0NDM?remarks=日本7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=YqVu-VgOokDmH_9LKhfXn92pdjYPwuy3wuWMQVFFSww&sid=22b8bf21b8f91c06
+vless://YXV0bzo2ZDBjMTJhYy00ZGIwLTQyNzctODYwMS02N2U1MThjODFjY2JAMTMuMjI5LjIyMi4xODQ6NDQz?remarks=新加坡7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=Xj-x0x2o5izCV9GBDPC96SuS sFG3ubVn6f_1UxuP61M&sid=bba1d66ebeb0e0ed
+vless://YXV0bzozZWY5NzU5OC00MDUxLTRiNmItYTYzOC02MjQ5YWVmZjRjNTNAMy4xMjkuNzAuMTUwOjQ0Mw?remarks=美国7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=A-O6n2qEwJru6IPUP_vc6TffCZSo 1A0Z8cOaj4HmJWE&sid=f51fa733f25944ab
+vless://YXV0bzo1NDQ4MzAxMC01ZmNiLTQyM2EtOTFmOC0wNThmMTQwNzdiNDVAMTMuMTI1LjkuMjE6NDQz?remarks=韩国7天免费,续费xxjiajia.com&tls=1&peer=learn.microsoft.com&alpn=h2,http/1.1&h2=1&xtls=2&pbk=YnBAjHD5cyekY7GzJPqIxU0xdVQxoTf 0VQbnptc_qks&sid=38eb8842297fd0c3
 
